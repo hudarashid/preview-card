@@ -1,0 +1,94 @@
+//Colors
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+
+}
+
+a:link {
+    text-decoration: none;   
+
+}
+
+.sedans {
+    background-color: $brightOrange;
+   
+}
+
+.suvs {
+    background-color: $darkCyan;
+}
+
+.luxury {
+    background-color: $veryDarkCyan;
+}
+
+//general styling button
+button, .button {
+    position: relative;
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 3.125rem;
+    transition: all 150ms ease-in-out;
+    
+    &--1 {
+        color: $brightOrange;
+    }
+
+    &--2 {
+        color: $darkCyan;
+    }
+
+    &--3 {
+        color: $veryDarkCyan;
+    }
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    transition: all 150ms ease-in-out;
+    //z-index: -1;
+}
+
+.button:hover, .button:focus {
+    border: 1px solid transparent;
+    border-color: white;
+    color: whitesmoke;
+
+}
+
+//style button 1
+.button--1:hover, .button--1:focus {
+    background-color: $brightOrange;
+}
+
+
+//style button 2
+.button--2:hover, .button--2:focus {
+    background-color: $darkCyan;
+}
+
+//style button 3
+.button--3:hover, .button--3:focus {
+    background-color: $veryDarkCyan;
+}
+
+
