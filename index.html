@@ -1,75 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <html role="main" lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="scss/style.css">
-  <title>Frontend Mentor | 3-column preview card component</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="scss/style.css">
+      <title>Frontend Mentor | 3-column preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
+  </head>
 
-  <div class="feature__container">
-    <div class="feature__grid">
+  <body>
 
-      <div class="feature__item sedans">
-  
-        <div class="feature__icon"><img src="images/icon-sedans.svg" alt="SEDANS icon" /></div>
-        <div class="feature__title">SEDANS</div>
-        <div class="feature__description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-          or on your next road trip.
+    <div role="container" class="feature__container">
+      <div class="feature__grid">
+
+        <div role="item" class="feature__item sedans">
+    
+          <div role="icon" class="feature__icon"><img src="images/icon-sedans.svg" alt="SEDANS icon" /></div>
+          <div role="title" class="feature__title">SEDANS</div>
+          <div role="description" class="feature__description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+            or on your next road trip.
+          </div>
+
+          <div role="button" class="btn">
+            <button class="button button--1">Learn More</button>
+          </div>
+          
+    
         </div>
-
-        <div class="btn">
-          <button class="button button--1">Learn More</button>
+    
+        <div role="item" class="feature__item suvs">
+    
+          <div role="icon" class="feature__icon"><img src="images/icon-suvs.svg" alt="SUVs icon" /></div>
+          <div role="title" class="feature__title">SUVS</div>
+          <div role="description" class="feature__description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+            and off-road adventures.
+          </div>
+          <div role="button" class="btn">
+            <button class="button button--2">Learn More</button>
+          </div>
+          
         </div>
-        
-  
+    
+        <div role="item" class="feature__item luxury">
+    
+          <div role="icon" class="feature__icon"><img src="images/icon-luxury.svg" alt="LUXURY icon" /></div>
+          <div role="title" class="feature__title">LUXURY</div>
+          <div role="description" class="feature__description">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+            rental and arrive in style.
+          </div>
+          <div role="button" class="btn">
+            <button class="button button--3">Learn More</button>
+          </div>
+          
+        </div>
+    
+    
       </div>
-  
-      <div class="feature__item suvs">
-  
-        <div class="feature__icon"><img src="images/icon-suvs.svg" alt="SUVs icon" /></div>
-        <div class="feature__title">SUVS</div>
-        <div class="feature__description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-          and off-road adventures.
-        </div>
-        <div class="btn">
-          <button class="button button--2">Learn More</button>
-        </div>
-        
-      </div>
-  
-      <div class="feature__item luxury">
-  
-        <div class="feature__icon"><img src="images/icon-luxury.svg" alt="LUXURY icon" /></div>
-        <div class="feature__title">LUXURY</div>
-        <div class="feature__description">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-          rental and arrive in style.
-        </div>
-        <div class="btn">
-          <button class="button button--3 ">Learn More</button>
-        </div>
-        
-      </div>
-  
-  
     </div>
-  </div>
- 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/%F0%9F%93%9A-huda-rashid-0843aa146/" target="_blank">Huda Rashid</a>.
-  </div>
-</body>
+  
+    <div role="attribution" class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/%F0%9F%93%9A-huda-rashid-0843aa146/" target="_blank">Huda Rashid</a>.
+    </div>
+  </body>
 </html>

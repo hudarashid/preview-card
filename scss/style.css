@@ -10,24 +10,11 @@ html {
 }
 
 body {
-  background-color: white;
   overflow-x: hidden;
 }
 
 a:link {
   text-decoration: none;
-}
-
-.sedans {
-  background-color: #e38826;
-}
-
-.suvs {
-  background-color: #006970;
-}
-
-.luxury {
-  background-color: #004241;
 }
 
 button, .button {
@@ -81,24 +68,38 @@ button--3, .button--3 {
 }
 
 .feature {
-  background-color: #c8b1ec;
   text-align: left;
 }
 
 .feature__container {
   max-width: 81.5rem;
   margin: 0 auto;
-  padding: 5.5625rem 1.5rem 5.5625rem 1.5rem;
+  padding: 5.5625rem 2rem 5.5625rem 2rem;
+  background: rgba(238, 238, 238, 0.938);
+}
+
+@media (min-width: 40em) {
+  .feature__container {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__container {
+    padding: 5.5625rem 2rem 5.5625rem 2rem;
+  }
 }
 
 @media (min-width: 80em) {
   .feature__container {
-    padding: 7.4375rem 14.8125rem 7.4375rem 14.8125rem;
+    padding: 7.4375rem 12.5rem 7.4375rem 12.5rem;
   }
 }
 
 @media (min-width: 64em) {
   .feature__grid {
+    background: rgba(238, 238, 238, 0.938);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,6 +117,32 @@ button--3, .button--3 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+.feature__item.sedans {
+  background-color: #e38826;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+@media (min-width: 64em) {
+  .feature__item.sedans {
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+}
+
+.feature__item.suvs {
+  background-color: #006970;
+}
+
+.feature__item.luxury {
+  background-color: #004241;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+@media (min-width: 64em) {
+  .feature__item.luxury {
+    border-radius: 0 0.75rem 0.75rem 0;
   }
 }
 
