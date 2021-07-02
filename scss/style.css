@@ -163,9 +163,9 @@ button--3, .button--3 {
   line-height: 1.7;
 }
 
-@media (min-width: 40em) {
-  .feature__description {
-    margin-bottom: 6.8125rem;
+@media (min-width: 80em) {
+  .feature__description.web {
+    margin-bottom: 3.9375rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

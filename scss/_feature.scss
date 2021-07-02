@@ -64,6 +64,7 @@
             
             @include breakpoint-up(large) {
                 border-radius: 0 0.75rem 0.75rem 0;
+                
             } 
 
         }
@@ -86,9 +87,14 @@
         font-family: 'Lexend Deca', sans-serif;
         line-height: 1.7;
 
-        @include breakpoint-up(medium) {
-            margin-bottom: 6.8125rem;
+        &.web {
+            @include breakpoint-up(xlarge) {
+                margin-bottom: 3.9375rem;
+                
+            }
         }
+
+        
     }
 
    
